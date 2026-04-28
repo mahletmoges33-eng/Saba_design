@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .nav-bar{display: flex;
+        background-color: rgb(54, 87, 150);
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;}
+        .logo{font-weight: bold;
+        color:white;
+        font-size: 24px;
+        text-decoration:none;}
+        .nav-links{list-style: none;
+        display: grid;grid-template-columns: repeat(4,1fr);
+        gap: 115px;}
+        .nav-links li a{position: relative;
+        text-decoration:none;
+        color: white;
+        font-size: 18px;
+        padding: 5px;
+        transition:color 1s ease;}
+        .button-links{display: flex;
+        gap: 10px;}
+        .signin {background-color: transparent;
+        border: 1 solid;
+        color: white;}
+        .signup{background-color: rgb(247, 247, 150);
+        color: white;}
+        a:hover{
+            color:orange;
+        }
+        *{color: white;}
+    </style>
+</head>
+<body>
+
+
+    <nav class="nav-bar">
+        <div class="logo"><a href="#">website</a></div>
+        <ul class="nav-links">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">contant</a></li>
+        </ul>
+        <div class="button-links">
+            <button class="btn signin"><a href="#">sign in</a></button>
+            <button class="btn signup"><a href="#">sign up</a></button>
+        </div>
+    </nav>
+</body>
+</html>
